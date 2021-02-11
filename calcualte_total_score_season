@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+wins = 3	#only hardcoded portion of this solution.  parameters given
+draws = 1
+losses = 0
+			#here we will be entering the user inputs
+
+w = input('---/\/\ please enter your wins:  '
+)
+dr = input('---/\/\ please enter your draws:  '
+)
+l = input('---/\/\ please enter your losses:  '
+)
+			#now we are starting the function
+def multiply(c,d,e):
+	c = wins
+	d = draws
+	e = losses
+			#now let's make the function do the work, all operations must be done with casting to int in order to multiply seqeunce of type "string"
+	result = int(c)*int(w) + int(d)*int(dr) + int(e)*int(l)
+	return result
+			
+print(multiply(w,dr,l))
